@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about__info{
+    display: flex;
+    flex-direction: column;
+    gap: 71px;
+    justify-content: center;
+    align-items: center;
+}
+.about__info h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 404px;
+    height: 107px;
+    box-sizing: border-box;
+border: 8px solid rgb(0, 0, 0);
+background: rgba(255, 255, 255, 0);
+color: rgb(0, 0, 0);
+font-family: Montserrat;
+font-size: 30px;
+font-weight: 700;
+line-height: 37px;
+letter-spacing: 35.54%;
+text-align: center;
+}
+.about__info p{
+    width: 763px;
+height: 47px;
+color: rgb(5, 5, 5);
+font-family: OpenSans;
+font-size: 15px;
+font-weight: 400;
+line-height: 138.68%;
+letter-spacing: 0%;
+text-align: center;
+}

@@ -1,0 +1,91 @@
+
+
+
+
+
+.skils{
+    height: 1681px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    
+    
+    }
+    .skils h1{
+    
+        width: 404px;
+        height: 107px;
+        box-sizing: border-box;
+        box-sizing: border-box;
+    border: 8px solid rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0);
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 37px;
+        letter-spacing: 35.54%;
+        text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .skils__item{
+        width: 1004px;
+    height: 1413px;
+    
+    }
+    .skils__item{
+        display: flex;
+        flex-direction:column ;
+        gap: 102px;
+        margin-top: 79px;
+    }
+    .item__now{
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+    }
+    .skill__box{
+        display: flex;
+        gap:75px;
+    }
+    .item__now h3{
+        width: 261px;
+        height: 74px;
+        color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 18.54%;
+    text-align: left;
+    
+    
+    }
+    .box__card{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        justify-content: center;
+        align-items: center;
+    }
+    .box__card h4{
+        width: 166px;
+    height: 52px;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 13.54%;
+    text-align: center;
+    }
+    .box__card img{
+        width: 84.21px;
+    height: 100px;
+    }
