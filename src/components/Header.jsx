@@ -22,7 +22,7 @@ const Header = ({ theme, toggleTheme }) => {
 
   
   return(
-  <header className={`header ${theme}`}>
+  <header id="home" className={`header ${theme}`}>
     
       
       <nav className="nav">

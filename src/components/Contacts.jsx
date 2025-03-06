@@ -1,5 +1,18 @@
+import arrow from "../assets/arrow.svg";
+
+
 const Contacts =() =>{
 
+    const handleScrollToSection = (e, targetId) => {
+        e.preventDefault();
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      };
 return(
 
 <section className="contact" id="contact">
@@ -14,6 +27,16 @@ return(
 
 SUBMIT
 </button>
+</div>
+<div className="back">
+<a href="#home"   onClick={(e) => handleScrollToSection(e, 'home')}>
+<img src={arrow} alt="" />
+</a>
+<p>
+BACK TO TOP
+</p>
+
+
 </div>
    
 

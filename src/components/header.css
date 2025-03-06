@@ -13,7 +13,7 @@ transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 
   }
   .nav{
-    margin-top: 72px;
+    padding-top: 72px;
     width: 1200px;
   
 height:20px;
@@ -46,6 +46,7 @@ font-weight: 700;
 line-height: 21px;
 letter-spacing: 0%;
 text-align: center;
+transition: .5s;
 }
 .header__content{
     width: 100%;
@@ -148,7 +149,7 @@ color:red ;
   .nav__content-menu-btn{
     width: 30px;
     height: 30px;
-
+gap:5px ;
     
     display: flex;
     flex-direction: column;
@@ -159,12 +160,12 @@ color:red ;
   
   
   .nav__content-menu-btn-line{
-    width: 31px;
+    width: 31px !important;
     height: 3.8px;
     border-radius: 5px;
-
+  
 background: rgb(255, 255, 255);
- background: black;
+
  position: relative;
   }
   .nav__content-menu-btn-line::after{
@@ -172,7 +173,7 @@ background: rgb(255, 255, 255);
     position: absolute;
     width: 100%;
     height: 100%;
-    background: black;
+    background: rgb(255, 255, 255);
     left: 0;
     top: -5px;
     border-radius: 5px;
@@ -182,7 +183,7 @@ background: rgb(255, 255, 255);
     position: absolute;
     width: 100%;
     height: 100%;
-    background: black;
+    background: rgb(255, 255, 255);
     left: 0;
     top: 5px;
     border-radius: 5px;

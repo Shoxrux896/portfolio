@@ -43,32 +43,15 @@ margin-left: 140px;
 }
 @media (max-width: 768px) {
 
-
 .nav{
- 
-    position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    
- 
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+background: black;
+}
 
-}
-.nav__list{
-    position: absolute;
-    width: 100%;
-    top: 0;
-     flex-direction: column;
-  right: 5px;
- 
-     align-items: center;
-     transform: scale(0);
-     transform-origin: top;
 
-}
-.nav__content-menu:hover .nav__list{
-    transform: scaleY(1);
-}
 .nav__content-menu-btn{
     width: 100%;
     height: 100%;
@@ -86,12 +69,109 @@ margin-left: 140px;
 transform: scale(0);
  }
 
+ header{
+    background: white
+ }
+ .nav__content-menu-btn{
+    transform: scale(0)
+ }
+ .nav__list{
+    position: absolute;
+   right: 374px;
+ }
+.header__content-banner{
+    transform: scale(0);
+}
+.nav__list-link{
+
+color: rgb(255, 255, 255);
+
+}
+.introduction__info h2{
+    font-size: 22px;
+    padding-left: 40px;
+}
+.introduction__info p{
+
+width: 500px !important;
+height: 300px !important;
+text-align: justify;
+
+}
+.introduction__info{
+    padding: 20px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.about__info h2{
+    width: 204px;
+    height: 57px;
+    font-size: 22px;
+}
+.about__info p{
+    width: 563px;
+    height: 147px;
+}
+.skils h1{
+    width: 204px !important;
+    height: 57px !important;
+    font-size: 22px !important;
+}
+.item__now h3{
+    text-align: center !important;
+    align-self: center;
+
+    font-size: 22px !important;
+}
+.skill__box{
+    flex-direction: column;
+}
+.one{
+    transform: scale(0);
+}
+.two{
+    transform: scale(0);
+}
+
 }
 
 
 @media (max-width: 576px) {
 
-
+    .nav{
+        width: 100%;
+        height: 57px;
+        position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        
+     
+    
+    }
+    .nav__list{
+        position: absolute;
+        width: 100%;
+        top: 0;
+         flex-direction: column;
+      right: 5px;
+     
+         align-items: center;
+         transform: scale(0);
+         transform-origin: top;
+    
+    }
+    .nav__content-menu-btn{
+       
+        transform: scale(1);
+      margin-bottom: 80px;
+      padding-right: 60px;
+    }
+   
+    .nav__content-menu:hover .nav__list{
+        transform: scaleY(1);
+    }
 header{
 background: url(../assets/Background.svg);
 background-repeat: no-repeat;
@@ -102,7 +182,7 @@ background-size: cover;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    position: relative;
     
      }
      .info-list{
@@ -113,10 +193,12 @@ background-size: cover;
      }
      .header__content-info{
       flex-direction: column;
-        display: flex;
-        justify-content: start;
-        align-items: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
         margin-top: 200px;
+        position: absolute;
+        left: -50px;
     
      }
      .header__content-info h2{
@@ -151,13 +233,16 @@ background-size: cover;
      .nav__list li{
         background: rgba(0, 0, 0, 0.4);
         width: 100%;
-        width: 382px;
+        width: 582px;
        height: 57px; 
       display: flex;
       justify-content: center;
       align-items: center;
       
    
+     }
+     .nav__list-link:hover{
+        color: black;
      }
      .nav__list-link{
         color: rgb(255, 255, 255);
@@ -169,17 +254,23 @@ letter-spacing: 0%;
 text-align: center;
      }
 .nav__list{
-   
+   top: 42px;
   display: flex;
   gap: 0px !important;
- 
+right: 115px;
   align-items: center;
 
+}
+.nav__list li:hover{
+    color: black;
+    background: white;
+    transition: .5s;
 }
 .nav__content-menu{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+   position: relative;
 }
 .introduction__info h2{
     width: 285px !important ;
@@ -190,7 +281,7 @@ font-size: 25px !important;
 font-weight: 700;
 line-height: 30px;
 letter-spacing: 18.54%;
-text-align: center !important;
+
 }
 .introduction__info p{
     width: 284px !important ;
@@ -201,12 +292,12 @@ font-size: 15px;
 font-weight: 400;
 line-height: 138.68%;
 letter-spacing: 0%;
-text-align: justify !important;
+text-align: center !important;
 }
 .introduction__info{
    padding-top: 40px;
   align-items: center;
-  margin-left: 50px;
+
 }
 .about__info h2{
     width: 210px;
@@ -292,6 +383,26 @@ text-align: center;
 }
   .projects-grid h3{
 font-size: 18px;
+}
+.contact h2{
+    width: 156px;
+height: 68px;
+color: rgb(0, 0, 0);
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: 127.9%;
+letter-spacing: 35.54%;
+text-align: center;
+}
+.contact__info input{
+    height: 43px;
+    width: 243px;
+}
+.message{
+   
+    width: 600px ;
+    height: 84px !important;
 }
     
 }
