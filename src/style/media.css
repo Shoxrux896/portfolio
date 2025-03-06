@@ -198,7 +198,7 @@ background-size: cover;
      align-items: center;
         margin-top: 200px;
         position: absolute;
-        left: -50px;
+        left: -110px;
     
      }
      .header__content-info h2{
@@ -262,7 +262,7 @@ right: 115px;
 
 }
 .nav__list li:hover{
-    color: black;
+    
     background: white;
     transition: .5s;
 }
@@ -342,7 +342,7 @@ text-align: center;
     
 }
 .item__now h3{
-    margin-left: 60px;
+    
     width: 250px;
 height: 74px;
 color: rgb(0, 0, 0);
@@ -403,6 +403,15 @@ text-align: center;
    
     width: 600px ;
     height: 84px !important;
+}
+.skils{
+    height: 1481px !important; 
+}
+.contact__info{
+    gap: 40px;
+}
+.contact{
+    gap: 60px;
 }
     
 }

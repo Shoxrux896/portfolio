@@ -2,7 +2,7 @@ import "../components/introduction.css";
 const Intoroduction =()=>{
 
 return(
-<section className="introduction">
+<section  className="introduction">
 
 
 <div className="introduction__info">
