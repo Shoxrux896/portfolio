@@ -1,10 +1,23 @@
 
 
 
+.about.dark{
+    background: black;
+  
+    
+}
 
 
+.about.dark .about__info h2{
+    color: white;
+    border: 8px solid white;
 
+}
+.about.dark .about__info p{
+    color: white;
+    
 
+}
 .about{
     display: flex;
     justify-content: center;

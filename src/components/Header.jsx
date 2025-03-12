@@ -6,26 +6,28 @@ import inst from "../assets/inst.svg";
 
 
 
-const Header = ({ theme, toggleTheme }) => {
+
  
 
-  const handleScrollToSection = (e, targetId) => {
-    e.preventDefault();
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-  };
+ 
 
   
-  return(
-  <header id="home" className={`header ${theme}`}>
-    
-      
+  const Header = ({ theme, toggleTheme }) => {
+    const handleScrollToSection = (e, targetId) => {
+      e.preventDefault();
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+    };
+    return (
+      <header className={`header ${theme}`} id="home">
+        
       <nav className="nav">
+      <input type="checkbox" onClick={toggleTheme} className="theme-checkbox" />
       <h1>Portfolio</h1>
       <div className="nav__content-menu">
    
@@ -43,14 +45,17 @@ const Header = ({ theme, toggleTheme }) => {
     <a href="#projects" className="nav__list-link" onClick={(e) => handleScrollToSection(e, 'projects')}>Projects</a>
   </li>
 </ul>
+
 <div className="nav__content-menu-btn">
     <div className="nav__content-menu-btn-line">
 
     </div>
     </div>
+    
     </div>
-    </nav>
   
+    </nav>
+   
      
    
     

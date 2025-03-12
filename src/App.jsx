@@ -1,30 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
+import Introduction from './components/Introduction';
 import About from './components/About';
+import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Contacts from './components/Contacts';
 import './main.css';
 import './style/font.css';
-import Intorduction from './components/Inrtroduction'; 
-import Skils from './components/Skills'; 
-import Contacts from './components/Contacts';
-
-
-const themes = ["light", "dark", "blue", "green", "pink"];
 
 const App = () => {
-  const [themeIndex, setThemeIndex] = useState(0);
+  const [theme, setTheme] = useState("light");
 
-  const toggleTheme = () => setThemeIndex((themeIndex + 1) % themes.length);
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
 
-  
   return (
-    <div>
-         <Header theme={themes} toggleTheme={toggleTheme} />
-      <Intorduction theme={themes[themeIndex]} />
-      <About theme={themes[(themeIndex + 1) % themes.length]} />
-      <Skils theme={themes[(themeIndex + 2) % themes.length]} />
-      <Projects theme={themes[(themeIndex + 3) % themes.length]} />
-      <Contacts theme={themes[(themeIndex + 4) % themes.length]} />
+    <div className={`app ${theme}`}>
+      <Header theme={theme} toggleTheme={toggleTheme} />
+      <Introduction theme={theme} toggleTheme={toggleTheme} />
+      <About theme={theme}  toggleTheme={toggleTheme}/>
+      <Skills theme={theme} toggleTheme={toggleTheme} />
+      <Projects theme={theme} toggleTheme={toggleTheme} />
+      <Contacts theme={theme} toggleTheme={toggleTheme}/>
     </div>
   );
 };

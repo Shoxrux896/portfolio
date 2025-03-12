@@ -1,9 +1,12 @@
 import arrow from "../assets/arrow.svg";
+import React, { useState, useEffect } from "react";
 
-
-const Contacts =() =>{
-
-    const handleScrollToSection = (e, targetId) => {
+const Contacts =({  theme  }) =>{
+     const [localTheme , setLocalTheme] = useState(theme);
+useEffect(() => {
+      setLocalTheme(theme); 
+   }, [theme]);
+    const handleScrollToSection = (e , targetId) => {
         e.preventDefault();
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
@@ -15,16 +18,14 @@ const Contacts =() =>{
       };
 return(
 
-<section className="contact" id="contact">
- 
-    <h2>CONTACTS</h2>
+<section className={`contact ${localTheme}`} id="contact">
+    <h2 className="title">CONTACTS</h2>
 <div className="contact__info">
 <input className="name" type="text" placeholder="ENTER YOUR NAME*" />
 <input className="email" type="text" placeholder="ENTER YOUR EMAil*" />
 <input className="number" type="text" placeholder="PHONE NUMBER*" />
 <input className="message" type="text" placeholder="YOUR MESSAGE*" />
 <button>
-
 SUBMIT
 </button>
 </div>
@@ -39,16 +40,6 @@ BACK TO TOP
 
 </div>
    
-
-
-
-
-
-
-
-
-
-
 
 
 

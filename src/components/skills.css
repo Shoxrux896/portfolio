@@ -8,10 +8,23 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-
+justify-content: center;
     
     
     
+    }
+    .skils.dark{
+        background: black;
+    }
+    .skils.dark h1{
+        color: white;
+        border: 8px solid white;
+    }
+    .skils.dark .item__now h3{
+        color: white;
+    }
+    .skils.dark .box__card h4{
+        color: white;
     }
     .skils h1{
     

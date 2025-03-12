@@ -89,7 +89,8 @@ color: rgb(255, 255, 255);
 }
 .introduction__info h2{
     font-size: 22px;
-    padding-left: 40px;
+   
+
 }
 .introduction__info p{
 
@@ -99,10 +100,8 @@ text-align: justify;
 
 }
 .introduction__info{
-    padding: 20px;
-    display: flex;
-    justify-content: center !important;
-    align-items: center !important;
+  padding-top: 40px;
+  
 }
 .about__info h2{
     width: 204px;
@@ -133,7 +132,24 @@ text-align: justify;
 .two{
     transform: scale(0);
 }
-
+.projects-grid{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.project-card{
+    width: 250px;
+    height: 150px;
+    grid-column: 1 / 3; 
+    align-self: center;
+    justify-self: center;
+}
+.project-card h3{
+    font-size: 18px;
+   
+}
 }
 
 
@@ -172,6 +188,34 @@ text-align: justify;
     .nav__content-menu:hover .nav__list{
         transform: scaleY(1);
     }
+    header.dark{
+        background: url(../assets/Background.svg);
+        background-repeat: no-repeat;
+background-size: cover;
+      }
+      .nav__content-menu-btn:hover
+      .nav__content-menu-btn-line{
+        background: transparent;
+      }
+      .nav__content-menu-btn:hover
+    .nav__content-menu-btn-line::before{
+        transform: rotate(45deg) !important;
+        top:0 !important;
+        
+    
+    
+      }
+      .nav__content-menu-btn:hover .nav__content-menu-btn-line::after{
+        transform: rotate(-45deg);
+        top:0 !important;
+    
+    
+    
+      }
+
+
+
+
 header{
 background: url(../assets/Background.svg);
 background-repeat: no-repeat;
@@ -184,6 +228,9 @@ background-size: cover;
     flex-direction: column;
     position: relative;
     
+     }
+     .theme-checkbox{
+        transform: scale(0);
      }
      .info-list{
         display: flex;
@@ -206,11 +253,13 @@ background-size: cover;
         width: 200px;
         font-size: 50px;
         text-align: center;
+        color: white;
      }
      .header__content-info h3{
         width: 200px;
         font-size: 30px;
         text-align: center;
+        color: white;
         margin-right: 150px;
        
         
@@ -292,11 +341,12 @@ font-size: 15px;
 font-weight: 400;
 line-height: 138.68%;
 letter-spacing: 0%;
-text-align: center !important;
+text-align: left !important;
 }
 .introduction__info{
-   padding-top: 40px;
+   padding-top: 40px;   
   align-items: center;
+  padding-right:140px;
 
 }
 .about__info h2{
@@ -370,7 +420,7 @@ line-height: 127.9%;
 letter-spacing: 43.54%;
 text-align: center;
 }
-.projects__banner{
+    .projects__banner{
     height: 194px;
 }
 .projects-grid{

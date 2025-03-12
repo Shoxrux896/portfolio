@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import "../components/projects.css";
 
-const Projects = () => {
+const Projects = ({theme}) => {
+  const [localTheme, setLocalTheme] = useState(theme);
+        
+         useEffect(() => {
+            setLocalTheme(theme);  // Обновление локального состояния при изменении theme
+         }, [theme]);
   const backgrounds = [
     "url('/src/assets/grayson.png')",
     "url('/src/assets/materials.png')",
@@ -18,7 +23,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className='projects' id='projects'>
+    <section className={`projects ${localTheme}`} id='projects'>
       <div className="projects__banner">
         <h2>MY PROJECTS</h2>
       </div>
